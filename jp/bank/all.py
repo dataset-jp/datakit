@@ -4,7 +4,7 @@ import os
 import requests
 
 URL = 'http://ykaku.com/ginkokensaku/ginkositen.zip'
-OUTPUT_DIR       = '/tmp/build'
+OUTPUT_DIR       = '/src/data'
 OUTPUT_FILE_PATH = OUTPUT_DIR + '/output.csv'
 
 # GET raw data
