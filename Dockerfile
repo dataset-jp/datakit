@@ -5,5 +5,6 @@ RUN conda install -c anaconda pytables -y
 RUN pip install requests xlrd
 
 ENV PYTHONPATH $PYTHONPATH:/src
-WORKDIR /src
 ADD . /src
+
+CMD ["sh", "-c", "tail -f /dev/null"]
