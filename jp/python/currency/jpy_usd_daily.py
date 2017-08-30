@@ -8,7 +8,7 @@ import zipfile
 # '2014-12-23' => '1419292800'
 def str2unixtime(s):
     try:
-        datetime.strptime(s, '%Y-%m-%d').strftime("%s")
+        return datetime.strptime(s, '%Y-%m-%d').strftime("%s")
     except ValueError:
         print('ValueError')
         ''

@@ -7,9 +7,8 @@ import numpy as np
 
 
 # Download (参考表)全国人口の推移 from http://www.e-stat.go.jp/SG1/estat/List.do?lid=000001189063
-DOWNLOAD_FILE = "05k2-2.xls"
-OUTPUT_DIR       = '/tmp/build'
-OUTPUT_FILE_PATH = OUTPUT_DIR + '/output.csv'
+DOWNLOAD_FILE    = "./raw_data/05k2-2.xls"
+OUTPUT_FILE_PATH = '/src/data/output.csv'
 
 wb = xlrd.open_workbook(DOWNLOAD_FILE)
 sh = wb.sheet_by_index(0)
